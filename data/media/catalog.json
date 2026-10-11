@@ -1,0 +1,61 @@
+[
+  {
+    "id": "plan_retention_chart",
+    "modality": "image",
+    "path": "images/plan_retention_chart.png",
+    "text": "Northstar plan event retention chart: Team 90 days; Enterprise 365 days.",
+    "metadata": {
+      "source": "northstar_visual_guide.pdf",
+      "page": 1
+    }
+  },
+  {
+    "id": "incident_flow",
+    "modality": "image",
+    "path": "images/incident_flow.png",
+    "text": "Severity-one incident flow: detect, acknowledge within 15 minutes, update every 30 minutes, review within 3 working days.",
+    "metadata": {
+      "source": "northstar_visual_guide.pdf",
+      "page": 2
+    }
+  },
+  {
+    "id": "scanned_refund",
+    "modality": "image",
+    "path": "images/scanned_refund.png",
+    "text": "Synthetic scanned refund policy: request within 14 days and unused annual subscription; both conditions required.",
+    "metadata": {
+      "source": "northstar_visual_guide.pdf",
+      "page": 3
+    }
+  },
+  {
+    "id": "plan_policy",
+    "modality": "text",
+    "path": "notes/plan_policy.md",
+    "text": "Team costs INR 2400 per user per month, billed annually, with a minimum of 5 users. Taxes are additional. Enterprise pricing is custom. Upgrading cannot restore expired events.",
+    "metadata": {
+      "source": "plan_policy.md"
+    }
+  },
+  {
+    "id": "product_briefing_audio",
+    "modality": "audio",
+    "path": "audio/northstar_briefing.wav",
+    "text": "Welcome to the Northstar product briefing. The Team plan costs two thousand four hundred rupees per user per month, billed annually, with a minimum of five users. Team event data is retained for ninety days. Enterprise event data is retained for three hundred and sixty five days. Upgrading cannot restore data that has already expired. The Team API limit is six hundred requests per minute. Enterprise allows three thousand requests per minute. After an HTTP four twenty nine response, respect the Retry After header.",
+    "metadata": {
+      "source": "northstar_briefing.wav",
+      "provenance": "authored narration script, not ASR"
+    }
+  },
+  {
+    "id": "product_demo_video",
+    "modality": "video",
+    "path": "video/northstar_demo.mp4",
+    "text": "Narrated Northstar slides about Team annual billing, plan retention, API rate limits and retries.",
+    "metadata": {
+      "source": "northstar_demo.mp4",
+      "provenance": "authored scene description"
+    }
+  }
+]

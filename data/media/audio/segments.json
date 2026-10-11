@@ -1,0 +1,26 @@
+[
+  {
+    "id": "speech:billing",
+    "start": 0,
+    "end": 11.37,
+    "text": "Welcome to the Northstar product briefing. The Team plan costs two thousand four hundred rupees per user per month, billed annually, with a minimum of five users.",
+    "source": "northstar_briefing.wav",
+    "provenance": "authored TTS script; exact segment boundaries"
+  },
+  {
+    "id": "speech:retention",
+    "start": 11.82,
+    "end": 24.22,
+    "text": "Team event data is retained for ninety days. Enterprise event data is retained for three hundred and sixty five days. Upgrading cannot restore data that has already expired.",
+    "source": "northstar_briefing.wav",
+    "provenance": "authored TTS script; exact segment boundaries"
+  },
+  {
+    "id": "speech:api",
+    "start": 24.67,
+    "end": 38.6,
+    "text": "The Team API limit is six hundred requests per minute. Enterprise allows three thousand requests per minute. After an HTTP four twenty nine response, respect the Retry After header.",
+    "source": "northstar_briefing.wav",
+    "provenance": "authored TTS script; exact segment boundaries"
+  }
+]

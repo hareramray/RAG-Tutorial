@@ -1,0 +1,149 @@
+[
+  {
+    "id": "dev_leave",
+    "question": "How many annual paid leave days do full-time employees receive?",
+    "relevant_ids": [
+      "benefits_leave"
+    ],
+    "reference_answer": "24 days per calendar year.",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "dev_carry",
+    "question": "How many unused leave days can carry forward, and when do they expire?",
+    "relevant_ids": [
+      "benefits_leave"
+    ],
+    "reference_answer": "Up to 5 days, expiring on March 31.",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "dev_remote",
+    "question": "How many days a week may I work remotely and who approves?",
+    "relevant_ids": [
+      "remote_work"
+    ],
+    "reference_answer": "Up to 3 days per week with manager approval.",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "dev_retry",
+    "question": "What should a client do after HTTP 429?",
+    "relevant_ids": [
+      "api_limits"
+    ],
+    "reference_answer": "Respect Retry-After and use bounded exponential backoff with jitter.",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "dev_refund",
+    "question": "Can I get a refund for an unused annual subscription bought ten days ago?",
+    "relevant_ids": [
+      "refunds"
+    ],
+    "reference_answer": "It meets the unused and within-14-days conditions; submit to Billing for review.",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "dev_compare",
+    "question": "Compare Team and Enterprise event retention and API request limits.",
+    "relevant_ids": [
+      "data_retention",
+      "api_limits"
+    ],
+    "reference_answer": "Team 90 days and 600 requests/minute; Enterprise 365 days and 3000 requests/minute.",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "dev_unknown",
+    "question": "What is Northstar's parental leave allowance?",
+    "relevant_ids": [],
+    "reference_answer": "I do not have enough evidence to answer.",
+    "split": "dev",
+    "answerable": false
+  },
+  {
+    "id": "test_learning",
+    "question": "How much can an employee spend each year on approved learning?",
+    "relevant_ids": [
+      "benefits_leave"
+    ],
+    "reference_answer": "INR 30000 per year with manager approval before purchase.",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "test_price",
+    "question": "What does the Team subscription cost and what is the minimum seat count?",
+    "relevant_ids": [
+      "product_plans"
+    ],
+    "reference_answer": "INR 2400 per user per month billed annually, minimum 5 users, taxes additional.",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "test_delete",
+    "question": "After approved workspace deletion, when does active data disappear and when do backups expire?",
+    "relevant_ids": [
+      "data_retention"
+    ],
+    "reference_answer": "Active data within 7 days; encrypted backup copies within 30 days.",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "test_incident",
+    "question": "What are the acknowledgement and update intervals for an internal severity-one incident?",
+    "relevant_ids": [
+      "incident_response"
+    ],
+    "reference_answer": "Acknowledge within 15 minutes and customer-facing updates every 30 minutes.",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "test_support",
+    "question": "What is the Enterprise first-response target for a critical outage?",
+    "relevant_ids": [
+      "support_sla"
+    ],
+    "reference_answer": "1 hour, with 24/7 coverage; this is not a resolution guarantee.",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "test_refund_used",
+    "question": "Is a used annual subscription refundable five days after purchase under the standard policy?",
+    "relevant_ids": [
+      "refunds"
+    ],
+    "reference_answer": "No. Both within 14 days and unused are required.",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "test_release",
+    "question": "How many scheduled exports can a workspace configure in release 2.4?",
+    "relevant_ids": [
+      "release_notes"
+    ],
+    "reference_answer": "Up to 10 active export schedules.",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "test_unknown",
+    "question": "What is the CEO's private mobile number?",
+    "relevant_ids": [],
+    "reference_answer": "I do not have enough evidence to answer.",
+    "split": "test",
+    "answerable": false
+  }
+]

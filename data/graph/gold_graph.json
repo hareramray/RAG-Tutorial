@@ -1,0 +1,276 @@
+{
+  "provenance": "Manually curated gold teaching triples, not Claude extraction results. Source corpus is fictional.",
+  "entities": [
+    {
+      "id": "onboarding",
+      "label": "Employee onboarding",
+      "aliases": [
+        "onboarding",
+        "new employee",
+        "new hire"
+      ]
+    },
+    {
+      "id": "learning_budget",
+      "label": "Annual learning budget",
+      "aliases": [
+        "learning budget",
+        "learning allowance"
+      ]
+    },
+    {
+      "id": "inr_30000",
+      "label": "INR 30,000 per year",
+      "aliases": [
+        "30000",
+        "30,000"
+      ]
+    },
+    {
+      "id": "manager",
+      "label": "Manager approval",
+      "aliases": [
+        "manager",
+        "line manager"
+      ]
+    },
+    {
+      "id": "remote_work",
+      "label": "Remote work policy",
+      "aliases": [
+        "remote work",
+        "work from home"
+      ]
+    },
+    {
+      "id": "three_days",
+      "label": "Up to 3 days/week",
+      "aliases": [
+        "3 days",
+        "three days"
+      ]
+    },
+    {
+      "id": "mfa",
+      "label": "Multi-factor authentication",
+      "aliases": [
+        "mfa",
+        "multi-factor authentication"
+      ]
+    },
+    {
+      "id": "team",
+      "label": "Team plan",
+      "aliases": [
+        "team plan",
+        "northstar team"
+      ]
+    },
+    {
+      "id": "enterprise",
+      "label": "Enterprise plan",
+      "aliases": [
+        "enterprise",
+        "enterprise plan"
+      ]
+    },
+    {
+      "id": "ninety_days",
+      "label": "90-day retention",
+      "aliases": [
+        "90 days"
+      ]
+    },
+    {
+      "id": "year_retention",
+      "label": "365-day retention",
+      "aliases": [
+        "365 days"
+      ]
+    },
+    {
+      "id": "priority_support",
+      "label": "Priority support",
+      "aliases": [
+        "priority support"
+      ]
+    },
+    {
+      "id": "critical_response",
+      "label": "1-hour critical first response",
+      "aliases": [
+        "critical response",
+        "1 hour"
+      ]
+    },
+    {
+      "id": "scheduled_exports",
+      "label": "Scheduled CSV exports",
+      "aliases": [
+        "scheduled exports",
+        "csv exports"
+      ]
+    },
+    {
+      "id": "ten_schedules",
+      "label": "10 active export schedules",
+      "aliases": [
+        "ten schedules",
+        "10 schedules"
+      ]
+    },
+    {
+      "id": "upgrade",
+      "label": "Team-to-Enterprise upgrade",
+      "aliases": [
+        "upgrade",
+        "upgrading"
+      ]
+    },
+    {
+      "id": "expired_events",
+      "label": "Already expired events",
+      "aliases": [
+        "expired events",
+        "expired data"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-01",
+      "subject": "onboarding",
+      "predicate": "REFERS_TO",
+      "object": "learning_budget",
+      "source_id": "onboarding",
+      "quote": "The annual learning budget is described in the benefits policy and requires approval before purchase.",
+      "negated": false
+    },
+    {
+      "id": "edge-02",
+      "subject": "learning_budget",
+      "predicate": "ANNUAL_AMOUNT",
+      "object": "inr_30000",
+      "source_id": "benefits_leave",
+      "quote": "Each employee has an annual learning budget of INR 30000 for approved courses, books, and conferences.",
+      "negated": false
+    },
+    {
+      "id": "edge-03",
+      "subject": "learning_budget",
+      "predicate": "REQUIRES_APPROVAL",
+      "object": "manager",
+      "source_id": "benefits_leave",
+      "quote": "Obtain manager approval before purchase and submit an itemized receipt within 30 days.",
+      "negated": false
+    },
+    {
+      "id": "edge-04",
+      "subject": "onboarding",
+      "predicate": "REFERS_TO",
+      "object": "remote_work",
+      "source_id": "onboarding",
+      "quote": "During the first week, the employee completes security awareness training, reads the remote work policy, and agrees on two office collaboration days with their manager.",
+      "negated": false
+    },
+    {
+      "id": "edge-05",
+      "subject": "remote_work",
+      "predicate": "MAX_DAYS",
+      "object": "three_days",
+      "source_id": "remote_work",
+      "quote": "Northstar Analytics allows eligible employees to work remotely up to 3 days per week with manager approval.",
+      "negated": false
+    },
+    {
+      "id": "edge-06",
+      "subject": "remote_work",
+      "predicate": "REQUIRES_APPROVAL",
+      "object": "manager",
+      "source_id": "remote_work",
+      "quote": "Northstar Analytics allows eligible employees to work remotely up to 3 days per week with manager approval.",
+      "negated": false
+    },
+    {
+      "id": "edge-07",
+      "subject": "onboarding",
+      "predicate": "REQUIRES",
+      "object": "mfa",
+      "source_id": "onboarding",
+      "quote": "On day one at Northstar Analytics, a new employee meets their manager, completes identity verification, and activates their single sign-on account with MFA.",
+      "negated": false
+    },
+    {
+      "id": "edge-08",
+      "subject": "team",
+      "predicate": "RETENTION",
+      "object": "ninety_days",
+      "source_id": "data_retention",
+      "quote": "Northstar Cloud retains event data for 90 days on the Team plan and 365 days on the Enterprise plan.",
+      "negated": false
+    },
+    {
+      "id": "edge-09",
+      "subject": "enterprise",
+      "predicate": "RETENTION",
+      "object": "year_retention",
+      "source_id": "data_retention",
+      "quote": "Northstar Cloud retains event data for 90 days on the Team plan and 365 days on the Enterprise plan.",
+      "negated": false
+    },
+    {
+      "id": "edge-10",
+      "subject": "enterprise",
+      "predicate": "INCLUDES",
+      "object": "priority_support",
+      "source_id": "support_sla",
+      "quote": "Enterprise customers receive priority support.",
+      "negated": false
+    },
+    {
+      "id": "edge-11",
+      "subject": "enterprise",
+      "predicate": "CRITICAL_FIRST_RESPONSE",
+      "object": "critical_response",
+      "source_id": "support_sla",
+      "quote": "For a critical production outage, the Enterprise first-response target is 1 hour, with coverage 24 hours a day, seven days a week.",
+      "negated": false
+    },
+    {
+      "id": "edge-12",
+      "subject": "team",
+      "predicate": "INCLUDES",
+      "object": "scheduled_exports",
+      "source_id": "release_notes",
+      "quote": "The release introduced scheduled CSV exports for Team and Enterprise workspaces.",
+      "negated": false
+    },
+    {
+      "id": "edge-13",
+      "subject": "enterprise",
+      "predicate": "INCLUDES",
+      "object": "scheduled_exports",
+      "source_id": "release_notes",
+      "quote": "The release introduced scheduled CSV exports for Team and Enterprise workspaces.",
+      "negated": false
+    },
+    {
+      "id": "edge-14",
+      "subject": "scheduled_exports",
+      "predicate": "WORKSPACE_LIMIT",
+      "object": "ten_schedules",
+      "source_id": "release_notes",
+      "quote": "Each workspace may configure up to 10 active export schedules.",
+      "negated": false
+    },
+    {
+      "id": "edge-15",
+      "subject": "upgrade",
+      "predicate": "RESTORES",
+      "object": "expired_events",
+      "source_id": "data_retention",
+      "quote": "Upgrading from Team to Enterprise extends retention for data still present; it cannot recover already expired events.",
+      "negated": true
+    }
+  ]
+}
