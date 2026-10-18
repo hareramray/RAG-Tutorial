@@ -1,5 +1,11 @@
 # RAG: text, multimodal, graph, and structured data with Claude
 
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-EA4AAA?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/hareramray)
+[![Python 3.13](https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white)](#start-here)
+[![18 Jupyter notebooks](https://img.shields.io/badge/Jupyter-18_notebooks-F37626?logo=jupyter&logoColor=white)](notebooks/)
+[![GitHub stars](https://img.shields.io/github/stars/hareramray/RAG-Tutorial?style=flat&logo=github&label=Stars)](https://github.com/hareramray/RAG-Tutorial/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/hareramray/RAG-Tutorial)](https://github.com/hareramray/RAG-Tutorial/issues)
+
 A practical course of **18 Jupyter notebooks** for teaching by running code, from beginner foundations to advanced retrieval and expert practice. Each notebook includes learning goals, numbered steps, visible intermediate results, demo variations, and exercises with sample solutions. Every notebook starts from a fresh kernel; there is no hidden dependency on a previous notebook's variables.
 
 Claude reads your existing **`CLAUDE_KEY` from `.env`**. The project does not modify that file. Generation uses Anthropic, with a LangChain integration in lesson 05. Text embeddings, reranking, CLIP image embeddings, CLAP audio embeddings, and Whisper speech recognition run locally on CPU; they need no additional paid API key. Anthropic does not provide an embedding model in its API. See the [Anthropic embedding documentation](https://platform.claude.com/docs/en/build-with-claude/embeddings).
@@ -142,6 +148,10 @@ Verified in this workspace: **18/18 notebooks executed in fresh offline kernels 
 Executed verification copies and the report are written to `artifacts/offline_notebooks/`; source notebooks retain empty outputs so a presentation starts cleanly. The offline runner also accepts notebook prefixes, for example `scripts/verify_notebooks.py 04 10`. Optional `--langchain` on the smoke checker makes a separate short Claude call through LangChain.
 
 Notebook authoring scripts are `scripts/build_beginner.py` (00–03), `scripts/build_intermediate.py` (04–07), `scripts/build_advanced.py` (08–11), `scripts/build_visual_rag.py` (12–13), `scripts/build_temporal_rag.py` (14–15), and `scripts/build_graph_sql_rag.py` (16–17). Running a generator overwrites edits made directly to its notebooks. `scripts/build_data.py` recreates the text corpus; `scripts/build_media.py` recreates the bundled media and requires Windows TTS and fonts. Media is already included, so ordinary notebook users do not need to run these build scripts. Shared utilities are in [core.py](rag_workshop/core.py), [media.py](rag_workshop/media.py), and [structured.py](rag_workshop/structured.py).
+
+## Support this project
+
+If this course helps you learn or teach RAG, consider [sponsoring me on GitHub](https://github.com/sponsors/hareramray). You can also support the project by starring the repository, [reporting issues or suggesting lessons](https://github.com/hareramray/RAG-Tutorial/issues), and contributing improvements.
 
 ## Primary references
 
